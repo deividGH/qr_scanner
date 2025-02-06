@@ -1,0 +1,29 @@
+[
+    {
+        "id_curso": "C101",
+        "id_salon": 501,
+        "id_tiempo": "T3001",
+        "docente": "D2001",
+        "estudiantes": [
+            {
+                "nombre": "Deivid Toloza",
+                "codigo": "20171020140",
+                "correo": "datolozao@udistrital.edu.co",
+                "fecha": "2025-02-04 19:28:02"
+            },
+            {
+                "nombre": "Luisa Lugo",
+                "codigo": "20182020103 ",
+                "correo": "lmlugof@udistrital.edu.co",
+                "fecha": "2025-02-04 19:28:31"
+            }
+        ]
+    },
+    {
+        "id_curso": "C102",
+        "id_salon": 404,
+        "id_tiempo": "T3002",
+        "docente": "D2002",
+        "estudiantes": []
+    }
+]
