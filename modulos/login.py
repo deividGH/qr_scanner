@@ -1,10 +1,16 @@
 import tkinter as tk
 from tkinter import messagebox
+from pymongo import MongoClient
 
 class LoginApp:
     def __init__(self):
+        # Conectar a MongoDB
+        self.client = MongoClient("mongodb://localhost:27017")
+        self.db = self.client["QR_Scanner"]  # Reemplaza con el nombre de tu base de datos
+        self.docentes_collection = self.db["Docentes"]  # Reemplaza con el nombre de tu colección de docentes
+        self.estudiantes_collection = self.db["Estudiantes"]  # Reemplaza con la colección de estudiantes
+
         self.usuario = None
-        self.contraseña = None
         self.ventana = tk.Tk()
         self.ventana.title("Login QR Scanner")
         self.ventana.geometry("400x600")
@@ -36,21 +42,22 @@ class LoginApp:
         self.ventana.mainloop()
 
     def realizar_login(self):
-
-        usuarios = {
-            "datolozao@udistrital.edu.co": "1234",
-            "u": "u",
-            "lmlugof@udistrital.edu.co" : "1234",
-            "lamontanor@udistrital.edu.co" : "1234"
-        }
-
         usuario = self.entry_usuario.get()
         contraseña = self.entry_contraseña.get()
 
-        if usuario in usuarios and usuarios[usuario] == contraseña:
-            messagebox.showinfo("Login exitoso", f"¡Bienvenido, {usuario}!")
+        # Buscar en docentes
+        usuario_db = self.docentes_collection.find_one({"correo": usuario})
+        tipo_usuario = "docente"
+
+        # Si no está en docentes, buscar en estudiantes
+        if not usuario_db:
+            usuario_db = self.estudiantes_collection.find_one({"correo": usuario})
+            tipo_usuario = "estudiante"
+
+        # Validar credenciales
+        if usuario_db and usuario_db["contraseña"] == contraseña:
+            messagebox.showinfo("Login exitoso", f"¡Bienvenido {tipo_usuario} - {usuario}")
             self.usuario = usuario
-            self.contraseña = contraseña
             self.ventana.destroy()
         else:
             messagebox.showerror("Error", "Usuario o contraseña incorrectos.")
@@ -60,4 +67,4 @@ class LoginApp:
 
 def ejecutar_login():
     app = LoginApp()
-    return app.usuario
+    return app.usuario, app.db

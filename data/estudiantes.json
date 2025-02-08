@@ -1,17 +1,20 @@
 [
     {
-        "codigo": "20171020140",
+        "_id": "20171020140",
         "nombre": "Deivid Toloza",
-        "correo": "datolozao@udistrital.edu.co"
+        "correo": "datolozao@udistrital.edu.co",
+        "contraseña": 1234
     },
     {
-        "codigo": "20182020103 ",
+        "_id": "20182020103 ",
         "nombre": "Luisa Lugo",
-        "correo": "lmlugof@udistrital.edu.co"
+        "correo": "lmlugof@udistrital.edu.co",
+        "contraseña": 1234
     },
     {
-        "codigo": "20181020140",
+        "_id": "20181020140",
         "nombre": "Leeynyker Andrés Montaño",
-        "correo": "lamontanor@udistrital.edu.co"
+        "correo": "lamontanor@udistrital.edu.co",
+        "contraseña": 1234
     }
 ]
