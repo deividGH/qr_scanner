@@ -9,6 +9,7 @@
 - Ejecutar con el comando `python main.py`
 - Usar los atributos correo y contraseña de las colecciones *Docente* y *Estudiantes* para el login
 
-#### ***Consideraciones***:
-- Una sesión de clase debe ser inicializada por un docente para pode recibir registros de estudiantes
-- El programa usa la fecha y hora del sistema para validar si hay cursos activos. Al menos un curso de la base de datos debe contener la hora local con el nombre del día actual para poder registrar asistencia
+### <u>***Consideraciones***</u>:
+- Una sesión de clase debe ser inicializada por un docente para poder recibir registros de estudiantes
+- El programa utiliza la fecha y hora del sistema para verificar la existencia de cursos activos. Para que un curso sea considerado activo debe incluir en su arreglo de horarios un objeto que contenga el nombre del día actual y un rango de dos horas, con una hora de inicio y una de finalización que abarquen la hora actual. 
+- **Sólo será posible registrar la asistencia de un curso activo**
