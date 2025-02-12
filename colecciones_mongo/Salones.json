@@ -1,0 +1,21 @@
+[{
+  "_id": "504",
+  "nombre": "Sala de computación 504",
+  "capacidad": 25,
+  "ubicacion": "Edificio Sabio Caldas - Piso 5",
+  "facultad": "Ingeniería"
+},
+{
+  "_id": "605",
+  "nombre": "Laboratorio de electrónca",
+  "capacidad": 25,
+  "ubicacion": "Edificio Sabio Caldas - Piso 6",
+  "facultad": "Ingeniería"
+},
+{
+  "_id": "203",
+  "nombre": "Taller de mecánica",
+  "capacidad": 20,
+  "ubicacion": "Edificio Techné - Piso 2",
+  "facultad": "Tecnológica"
+}]

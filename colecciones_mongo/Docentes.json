@@ -1,0 +1,18 @@
+[{
+  "_id": "D001",
+  "nombre": "José David Alvarez Plata",
+  "correo": "jdalvarezp@udistrital.edu.co",
+  "contraseña": "1234",
+  "tipo_usuario": "docente",
+  "modalidad": "planta",
+  "estado": "activo"
+},
+{
+  "_id": "D002",
+  "nombre": "Rafael Acosta",
+  "correo": "raacostar@udistrital.edu.co",
+  "contraseña": "1234",
+  "tipo_usuario": "docente",
+  "modalidad": "planta",
+  "estado": "sabático"
+}]

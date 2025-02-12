@@ -1,0 +1,32 @@
+[{
+  "_id": {
+    "$oid": "67abde2259faeccbe218b663"
+  },
+  "id_salon": "S501",
+  "id_curso": "C101",
+  "nombre_curso": "Tendencias avanzadas de ingeniería de software",
+  "docente": "José David Alvarez Plata",
+  "fecha": "2025-02-11",
+  "hora": "18:32:50",
+  "dia": "martes",
+  "horario": [
+    {
+      "dia": "martes",
+      "hora_inicio": "18:00:00",
+      "hora_fin": "20:00:00"
+    },
+    {
+      "dia": "sábado",
+      "hora_inicio": "18:00:00",
+      "hora_fin": "20:00:00"
+    }
+  ],
+  "estudiantes": [
+    {
+      "codigo": "20181020140",
+      "nombre": "Leeynyker Andrés Montaño",
+      "correo": "lamontanor@udistrital.edu.co",
+      "hora": "18:34:10"
+    }
+  ]
+}]

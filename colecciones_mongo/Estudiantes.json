@@ -1,0 +1,21 @@
+[{
+  "_id": "20171020140",
+  "nombre": "Deivid Toloza",
+  "correo": "datolozao@udistrital.edu.co",
+  "contraseña": "1234",
+  "tipo_usuario": "estudiante"
+},
+{
+  "_id": "20182020103 ",
+  "nombre": "Luisa Lugo",
+  "correo": "lmlugof@udistrital.edu.co",
+  "contraseña": "1234",
+  "tipo_usuario": "estudiante"
+},
+{
+  "_id": "20181020140",
+  "nombre": "Leeynyker Andrés Montaño",
+  "correo": "lamontanor@udistrital.edu.co",
+  "contraseña": "1234",
+  "tipo_usuario": "estudiante"
+}]
