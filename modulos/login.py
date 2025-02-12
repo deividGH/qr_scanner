@@ -7,8 +7,8 @@ class LoginApp:
         # Conectar a MongoDB
         self.client = MongoClient("mongodb://localhost:27017")
         self.db = self.client["QR_Scanner"]  # Reemplaza con el nombre de tu base de datos
-        self.docentes_collection = self.db["Docentes"]  # Reemplaza con el nombre de tu colección de docentes
-        self.estudiantes_collection = self.db["Estudiantes"]  # Reemplaza con la colección de estudiantes
+        self.docentes_collection = self.db["Docentes"] 
+        self.estudiantes_collection = self.db["Estudiantes"]  
 
         self.usuario = None
         self.ventana = tk.Tk()
